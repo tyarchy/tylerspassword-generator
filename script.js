@@ -54,7 +54,8 @@ function generatePassword() {
   var lowerConfirm = confirm("Do you want lower case characters?")
   var upperConfirm = confirm("Do you want upper case characters?")
   var specchars = confirm("you want special characters?")
-
+  var nums = confirm("Do you want numbers")
+  
   if (lowerConfirm == true) {
     possibleCharacter += alphabet
   }
@@ -65,6 +66,10 @@ function generatePassword() {
 
   if (specchars == true) {
     possibleCharacter += characters
+  }
+
+  if (nums == true){
+    possibleCharacter += numbers
   }
 
   
